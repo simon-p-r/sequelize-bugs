@@ -14,7 +14,7 @@ addons:
   - "9.6"
 
 script:
-  - npm run trst-pgsql
+  - npm run test-pgsql
 
 before_script:
   - psql -c "CREATE DATABASE seq_db;" -U postgres
