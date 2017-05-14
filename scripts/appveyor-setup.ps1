@@ -12,7 +12,6 @@ $tcp.Alter()
 
 
 $config = @{
-  dbOpts = @{
     instanceName = "SQL2016"
     dialect = "mssql"
     host = "localhost"
@@ -30,14 +29,13 @@ $config = @{
       min = 0
       idle = 10000
     }
-  }
   
 }
 
 
 
 
-$json = $config | ConvertTo-Json -Depth 6 -Compress
+$json = $config | ConvertTo-Json -Depth 3 -Compress
 
 # Create sequelize_test database
 sqlcmd -S "(local)" -U "sa" -P "Password12!" -d "master" -Q "CREATE DATABASE [seq_db];"
