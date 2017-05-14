@@ -1,0 +1,38 @@
+{
+  "name": "sequelize-bugs",
+  "version": "0.0.1",
+  "description": "repo to test bugs in sequelize",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.4",
+    "tedious": "^2.0.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "lab": "^13.0.4"
+  },
+  "scripts": {
+    "test-pgsql": "cross-env DIALECT=postgres npm test",
+    "test-mssql": "cross-env DIALECT=mssql npm test",
+    "test": "lab -a code -v -t 80 -L -m 4000 -I __core-js_shared__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/simon-p-r/sequelize-bugs.git"
+  },
+  "keywords": [
+    "sequelize",
+    "postgres",
+    "msssql"
+  ],
+  "author": "simon-p-r",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/simon-p-r/sequelize-bugs/issues"
+  },
+  "homepage": "https://github.com/simon-p-r/sequelize-bugs#readme"
+}

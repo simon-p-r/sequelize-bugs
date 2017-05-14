@@ -1,0 +1,18 @@
+sudo: true
+dist: trusty
+
+language: node_js
+
+node_js:
+  - "4"
+  - "6"
+
+services:
+  - postgresql
+
+addons:
+  - "9.6"
+
+
+before_script:
+  - psql -c "CREATE DATABASE seq_db;" -U postgres

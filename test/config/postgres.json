@@ -1,0 +1,14 @@
+{
+    "username": "postgres",
+    "password": "admin",
+    "database": "seq_db",
+    "port": 5432,
+    "host": "localhost",
+    "dialect": "postgres",
+    "logging": false,
+    "pool": {
+        "min": 0,
+        "idle": 10000,
+        "max": 5
+    }
+}
