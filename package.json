@@ -12,7 +12,7 @@
     "tedious": "^2.0.0"
   },
   "devDependencies": {
-    "code": "^4.0.0",
+    "code": "^4.1.0",
     "cross-env": "^5.0.0",
     "lab": "^13.0.4"
   },
