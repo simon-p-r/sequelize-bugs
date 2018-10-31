@@ -14,7 +14,7 @@
   "devDependencies": {
     "code": "^4.0.0",
     "cross-env": "^5.0.0",
-    "lab": "^13.0.4"
+    "lab": "^17.0.3"
   },
   "scripts": {
     "test-pgsql": "cross-env DIALECT=postgres npm test",
