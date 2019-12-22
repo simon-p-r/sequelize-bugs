@@ -9,7 +9,7 @@
   "dependencies": {
     "pg": "^6.1.5",
     "sequelize": "^3.30.4",
-    "tedious": "^2.0.0"
+    "tedious": "^6.6.5"
   },
   "devDependencies": {
     "code": "^4.0.0",
